@@ -9,6 +9,7 @@
   tasks:
     - name: 'Instalar MySQL Server'
       apt:
+        force_apt_get: yes
         update_cache: yes
         cache_valid_time: 3600 #1 hora
         name: ["mysql-server-5.7", "python3-mysqldb"]
